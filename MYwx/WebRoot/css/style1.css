@@ -1,0 +1,54 @@
+.row {
+	display: table-cell;
+	vertical-align: middle;
+}
+.hid {
+	visibility: hidden;
+}
+
+html, form, table {
+	font-size: 62.5% !important; /* 10¡Â16=62.5% */
+}
+
+@media only screen and (min-width: 10px) {
+	html, form, table {
+		font-size: 110% !important; /* 15.04¡Â16=94% */
+	}
+}
+
+@media only screen and (min-width: 561px) {
+	html, form, table {
+		font-size: 109% !important; /* 17.44¡Â16=109% */
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	html, form, table {
+		font-size: 120% !important; /* 20¡Â16=125% */
+	}
+}
+
+.table-responsive{
+	border: 0px solid transparent !important;
+}
+
+#views {
+	vertical-align: middle;
+}
+/*web background*/
+.container {
+	display: table;
+	height: 100%;
+}
+
+/* centered columns styles */
+.row-centered {
+	text-align: center;
+}
+
+.col-centered {
+	display: inline-block;
+	float: none;
+	text-align: left;
+	margin-right: -4px;
+} 

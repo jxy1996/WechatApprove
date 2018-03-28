@@ -1,0 +1,135 @@
+* {
+	font-family: '微软雅黑';
+	color: #555;
+}
+
+form {
+	text-align: center;
+}
+
+table {
+	margin: 0 auto;
+}
+
+.input2 {
+	border-width: 1;
+	border-radius: 5px;
+	height: 15%;
+	width: auto;
+	line-height: 15%;
+	margin: 10px 0 0 0;
+	text-align: center;
+	background: #dedede;
+	margin: 0 auto;
+}
+
+.input3 {
+	background: white;
+	border-width: 1;
+	border-radius: 0.5em;
+	width: auto;
+	height: 15%;
+	text-align: center;
+}
+
+html, body {
+	height: 100%;
+	font: normal 50% Helvetica, Arial, sans-serif;
+}
+
+#cl-toolbar {
+	display: none;
+}
+
+#cl-dashboard {
+	display: none;
+}
+
+.bootstrap-iso-codelive {
+	display: none;
+}
+
+ul {
+	margin: auto;
+	padding: 0;
+}
+
+ul li {
+	margin: 5% auto;
+}
+
+#fieId {
+	height: 25%;
+}
+
+#formLogin {
+	position: absolute;
+	left: calc(25%);
+	top: calc(50% - 25%);
+	width: 50%;
+	height: 150%;
+	font: normal 100% Helvetica, Arial, sans-serif;
+}
+
+.formLogin {
+	position: absolute;
+	left: calc(25%);
+	top: calc(50% - 25%);
+	width: 50%;
+	height: 150%;
+	font: normal 100% Helvetica, Arial, sans-serif;
+}
+
+#ResultfieId {
+	height: 20%;
+}
+
+form fieldset #ResultInput {
+	margin-top: 20%;
+}
+
+.hid {
+	visibility: hidden;
+}
+
+html, form, table {
+	font-size: 62.5% !important; /* 10÷16=62.5% */
+}
+
+@media only screen and (min-width: 10px) {
+	html, form, table {
+		font-size: 110% !important; /* 15.04÷16=94% */
+	}
+}
+
+@media only screen and (min-width: 561px) {
+	html, form, table {
+		font-size: 109% !important; /* 17.44÷16=109% */
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	html, form, table {
+		font-size: 120% !important; /* 20÷16=125% */
+	}
+}
+
+.table-responsive{
+	border: 0px solid transparent !important;
+}
+
+#views {
+	vertical-align: middle;
+}
+#detail th{
+	text-align: center;
+}
+table thead th{
+	text-align: center;
+}
+bs-example-navbar-collapse-1 ul li{
+	line-height: 2%;
+}
+.dropdown-menu{
+	padding:0px;
+}

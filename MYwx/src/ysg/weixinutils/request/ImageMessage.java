@@ -1,11 +1,11 @@
 package ysg.weixinutils.request;
 /** 
- * ͼƬ��Ϣ 
+ * 图片消息 
  *  
  * @date 2013-09-10 
  */  
 public class ImageMessage extends BaseMessage {  
-    // ͼƬ����  
+    // 图片链接  
     private String PicUrl;  
   
     public String getPicUrl() {  

@@ -1,12 +1,12 @@
 package ysg.weixinutils.response;
 
 /** 
- * ÒôÀÖÏûÏ¢ 
+ * éŸ³ä¹æ¶ˆæ¯ 
  *  
  * @date 2013-09-10 
  */  
 public class MusicMessage extends BaseMessage {  
-    // ÒôÀÖ  
+    // éŸ³ä¹  
     private Music Music;  
   
     public Music getMusic() {  

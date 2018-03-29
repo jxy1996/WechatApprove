@@ -1,16 +1,16 @@
 package ysg.weixinutils.request;
 
 /** 
- * 链接消息 
+ * 閾炬帴娑堟伅 
  *  
  * @date 2013-09-10 
  */  
 public class LinkMessage extends BaseMessage {  
-    // 消息标题  
+    // 娑堟伅鏍囬  
     private String Title;  
-    // 消息描述  
+    // 娑堟伅鎻忚堪  
     private String Description;  
-    // 消息链接  
+    // 娑堟伅閾炬帴  
     private String Url;  
   
     public String getTitle() {  

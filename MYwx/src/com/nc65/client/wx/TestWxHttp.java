@@ -14,23 +14,23 @@ public class TestWxHttp {
                 URL url=new URL(urlstr);   
                 URLConnection conn=url.openConnection();   
   
-                //ÕâÀïÊÇ¹Ø¼ü£¬±íÊ¾ÎÒÃÇÒªÏòÁ´½ÓÀïÊä³öÄÚÈİ   
+                //è¿™é‡Œæ˜¯å…³é”®ï¼Œè¡¨ç¤ºæˆ‘ä»¬è¦å‘é“¾æ¥é‡Œè¾“å‡ºå†…å®¹   
                 conn.setDoOutput(true);   
   
-                //»ñµÃÁ¬½ÓÊä³öÁ÷   
+                //è·å¾—è¿æ¥è¾“å‡ºæµ   
                 OutputStreamWriter out=new OutputStreamWriter(conn.getOutputStream());   
   
-                //ÕâÀïÊÇÎÒ¶¨ÒåÁËÒ»×éÕËºÅĞÅÏ¢£¬×Ö¶Î+Êı¾İ   
+                //è¿™é‡Œæ˜¯æˆ‘å®šä¹‰äº†ä¸€ç»„è´¦å·ä¿¡æ¯ï¼Œå­—æ®µ+æ•°æ®   
                 String str="<xml>"
-                		+ "<URL><![CDATA[ÄãµÄÇëÇóµØÖ·]]></URL>"
-                		+ "<ToUserName><![CDATA[¹«ÖÚºÅid]]></ToUserName>"
-                		+ "<FromUserName><![CDATA[ÄãµÄopenId]]></FromUserName>"
+                		+ "<URL><![CDATA[ä½ çš„è¯·æ±‚åœ°å€]]></URL>"
+                		+ "<ToUserName><![CDATA[å…¬ä¼—å·id]]></ToUserName>"
+                		+ "<FromUserName><![CDATA[ä½ çš„openId]]></FromUserName>"
                 		+ "<CreateTime>1388135075</CreateTime>"
                 		+ "<MsgType><![CDATA[text]]></MsgType>"
-                		+ "<Content><![CDATA[ÄãºÃ]]></Content>"
+                		+ "<Content><![CDATA[ä½ å¥½]]></Content>"
                 		+ "<MsgId>1234567890123456</MsgId>"
                 		+ "</xml>";   
-                //°ÑÊı¾İĞ´Èë   
+                //æŠŠæ•°æ®å†™å…¥   
                 out.write(str);
                 out.flush();
                 out.close();

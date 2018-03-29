@@ -32,7 +32,6 @@ public class SomeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private List<ApproveInfoVO> list = new ArrayList<ApproveInfoVO>();
 	private ApproveService apService = new ApproveServiceImpl();
-	private Logger log = Logger.getLogger(SomeServlet.class.getSimpleName());
 	
 
 	public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -71,7 +70,6 @@ public class SomeServlet extends HttpServlet {
 				list = apService.doGetClientList(type, findName);
 			} catch (ServiceException e) {
 				e.printStackTrace();
-				log.log(Level.INFO, e.getMessage());
 				request.setAttribute("error", e.getMessage());
 				jsonObject.put("error", e.getMessage());
 				jsonObject.put("state", ApproveString.ERROR);
@@ -92,7 +90,6 @@ public class SomeServlet extends HttpServlet {
 				type = apService.doDudgeByUrl(url);
 			} catch (ServiceException e) {
 				e.printStackTrace();
-				log.log(Level.INFO, e.getMessage());
 				request.setAttribute("error", e.getMessage());
 				request.getRequestDispatcher("Error.jsp").forward(request, response);
 			}
@@ -121,18 +118,19 @@ public class SomeServlet extends HttpServlet {
 				closePW(out);
 			} catch (Exception e) {
 				e.printStackTrace();
-				log.log(Level.INFO, e.getMessage());
 			}
 		} else if ("/login".equals(action)) {
 			response.sendRedirect("login.jsp");
 		}
 		list.clear();
-	}
 	// else{
-	// System.out.println("PC端浏览");
-	// response.sendRedirect("Error.jsp");
+	// System.out.println("PC端浏览"); 
+	//	request.setAttribute("error","请在微信移动端打访问页面");
+	//	request.getRequestDispatcher("Error.jsp").forward(request, response);
 	// };
 	// }
+	}
+	//关闭输出流
 	public void closePW(PrintWriter pw){
 		pw.flush();
 		pw.close();

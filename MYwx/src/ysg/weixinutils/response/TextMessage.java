@@ -1,13 +1,13 @@
 package ysg.weixinutils.response;
 
 /** 
- * ÎÄ±¾ÏûÏ¢ 
+ * æ–‡æœ¬æ¶ˆæ¯ 
  *  
  * @author liufeng 
  * @date 2013-05-19 
  */  
 public class TextMessage extends BaseMessage {  
-    // »Ø¸´µÄÏûÏ¢ÄÚÈİ  
+    // å›å¤çš„æ¶ˆæ¯å†…å®¹  
     private String Content;  
   
     public String getContent() {  
